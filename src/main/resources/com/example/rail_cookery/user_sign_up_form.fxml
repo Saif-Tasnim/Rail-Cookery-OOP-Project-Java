@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rail_cookery.UserSignUpForm">
+   <left>
+      <VBox prefHeight="570.0" prefWidth="321.0" style="-fx-background-color: #f7a307;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="388.0" prefWidth="345.0" spacing="5.0">
+               <VBox.margin>
+                  <Insets top="122.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" prefHeight="110.0" prefWidth="304.0" text="Sign Up !" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="60.0" prefWidth="304.0" text="Do Sign Up Quickly" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="29.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="120.0" prefHeight="54.0" prefWidth="337.0" text="Make your life smarter !!!" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="24.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="1.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="69.0" prefWidth="371.0">
+                     <VBox.margin>
+                        <Insets top="17.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="181.0" text="Already a member ? " textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright Demibold Italic" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="-11.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="signin_button" mnemonicParsing="false" onAction="#pressed_sign_in" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #242551; -fx-background-radius: 25; -fx-cursor: hand;" text="Sign In" textFill="WHITE" underline="true">
+                           <HBox.margin>
+                              <Insets left="11.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="570.0" prefWidth="384.0" spacing="10.0" style="-fx-background-color: #ecf7fc;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Users/ABCD/Downloads/profile.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" top="22.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="34.0" prefWidth="266.0" text="User Registration_______">
+               <font>
+                  <Font name="Bodoni MT Bold" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="81.0" top="-35.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="493.0" prefWidth="403.0">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="f_name" prefHeight="50.0" prefWidth="357.0" promptText="Enter First Name" style="-fx-border-color: #242551; -fx-background-color: #242551; -fx-border-width: 0 0 1 0; -fx-text-fill: white;">
+                     <VBox.margin>
+                        <Insets left="19.0" right="27.0" top="24.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Lucida Bright Demibold Italic" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="l_name" layoutX="29.0" layoutY="34.0" prefHeight="50.0" prefWidth="357.0" promptText="Enter Last Name" style="-fx-border-color: #242551; -fx-background-color: #242551; -fx-border-width: 0 0 1 0; -fx-text-fill: white;">
+                     <font>
+                        <Font name="Lucida Bright Demibold Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="19.0" right="27.0" top="24.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="p_no" layoutX="10.0" layoutY="84.0" prefHeight="50.0" prefWidth="357.0" promptText="Enter Phone No" style="-fx-border-color: #242551; -fx-background-color: #242551; -fx-border-width: 0 0 1 0; -fx-text-fill: white;">
+                     <font>
+                        <Font name="Lucida Bright Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="19.0" right="27.0" top="24.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="e_mail" layoutX="10.0" layoutY="134.0" prefHeight="50.0" prefWidth="357.0" promptText="Enter E-Mail" style="-fx-border-color: #242551; -fx-background-color: #242551; -fx-border-width: 0 0 1 0; -fx-text-fill: white;">
+                     <font>
+                        <Font name="Lucida Bright Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="19.0" right="27.0" top="24.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <PasswordField fx:id="pass" prefHeight="50.0" prefWidth="357.0" promptText="New Password" style="-fx-border-color: #242551; -fx-background-color: #242551; -fx-border-width: 0 0 1 0; -fx-text-fill: white;">
+                     <VBox.margin>
+                        <Insets left="19.0" right="27.0" top="24.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Lucida Bright Demibold Italic" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </PasswordField>
+                  <PasswordField fx:id="con_pass" prefHeight="50.0" prefWidth="357.0" promptText="Confirm Password" style="-fx-border-color: #242551; -fx-background-color: #242551; -fx-border-width: 0 0 1 0; -fx-text-fill: white;">
+                     <VBox.margin>
+                        <Insets left="19.0" right="27.0" top="24.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Lucida Bright Demibold Italic" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </PasswordField>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="403.0">
+                     <children>
+                        <Button fx:id="submit_buttton" mnemonicParsing="false" onAction="#pressed_submit_button" prefHeight="29.0" prefWidth="85.0" style="-fx-background-color: #242551; -fx-background-radius: 25; -fx-cursor: hand;" text="Submit" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="32.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="reset_button" mnemonicParsing="false" onAction="#pressed_reset_button" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #242551; -fx-background-radius: 25; -fx-cursor: hand;" text="Reset" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="67.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

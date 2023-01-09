@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rail_cookery.ConfirmOrder">
+   <left>
+      <VBox prefHeight="782.0" prefWidth="358.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="784.0" prefWidth="315.0" style="-fx-background-color: #f7a307;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="209.0" prefWidth="266.0">
+                     <children>
+                        <Circle fx:id="ca" fill="WHITE" radius="36.0" stroke="#f7a307" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+                        <HBox prefHeight="49.0" prefWidth="266.0">
+                           <children>
+                              <Label fx:id="profile_lb" alignment="CENTER" prefHeight="49.0" prefWidth="333.0" text="Saif Tasnim Chowdhury" textFill="#161867">
+                                 <font>
+                                    <Font name="Lucida Bright Demibold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" style="-fx-background-color: #242551; -fx-cursor: hand; -fx-background-radius: 8; -fx-font-size: 14;" text="Update Profile Picture" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="70.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="207.0" />
+                  <VBox alignment="TOP_CENTER" prefHeight="333.0" prefWidth="315.0" spacing="20.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="284.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Pictures/speedometer.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="dash" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressed_dashboard" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: transparrent; -fx-border-radius: 30; -fx-cursor: hand;" text="Dashboad" textFill="#161867">
+                                 <padding>
+                                    <Insets left="13.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Lucida Bright Demibold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="284.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../Users/ABCD/Downloads/buy.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cart_list" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: transparrent; -fx-border-radius: 30; -fx-cursor: hand;" text="Cart List" textFill="#161867">
+                                 <padding>
+                                    <Insets left="13.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Lucida Bright Demibold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="78.0" prefHeight="48.0" prefWidth="284.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../Users/ABCD/Downloads/gear.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="setting" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressed_setting" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: transparrent; -fx-border-radius: 30; -fx-cursor: hand;" text="Settings" textFill="#161867">
+                                 <padding>
+                                    <Insets left="13.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Lucida Bright Demibold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="146.0" prefHeight="48.0" prefWidth="284.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../Users/ABCD/Downloads/shutdown.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="log_out" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressed_log_out" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: transparrent; -fx-border-radius: 30; -fx-cursor: hand;" text="Log Out" textFill="#161867">
+                                 <padding>
+                                    <Insets left="13.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Lucida Bright Demibold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ecf7fc;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="78.0" prefWidth="871.0" style="-fx-background-color: #ecf7fc;">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="577.0" text="Order Confirmation" textFill="#161867">
+                     <padding>
+                        <Insets left="8.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="11.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Pane prefHeight="83.0" prefWidth="359.0">
+                     <children>
+                        <TextField layoutX="7.0" layoutY="9.0" prefHeight="30.0" prefWidth="223.0" promptText="Search" style="-fx-background-radius: 20;">
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </TextField>
+                        <Button layoutX="248.0" layoutY="6.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="43.0" style="-fx-background-image: url(&quot;file:///C:/Users/ABCD/Downloads/messenger.png&quot;); -fx-background-position: center; -fx-background-size: contain; -fx-background-repeat: no-repeat; -fx-background-radius: 40; -fx-background-size: 40; -fx-cursor: hand;" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <VBox prefHeight="367.0" prefWidth="510.0" style="-fx-border-width: 2; -fx-border-color: #f7a307;">
+               <VBox.margin>
+                  <Insets left="90.0" right="180.0" top="60.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="47.0" prefWidth="549.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="549.0" text="Your Order Summary" textFill="#161867">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="58.0" prefWidth="549.0">
+                     <children>
+                        <Label fx:id="total_q" alignment="CENTER" prefHeight="63.0" prefWidth="549.0" text="Label" textFill="#161867">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="69.0" prefWidth="549.0">
+                     <children>
+                        <Label fx:id="total_p" alignment="CENTER" prefHeight="69.0" prefWidth="551.0" text="Label" textFill="#161867">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="82.0" prefWidth="549.0">
+                     <children>
+                        <Label fx:id="payment_status" alignment="CENTER" prefHeight="86.0" prefWidth="549.0" text="Label" textFill="#161867">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="549.0">
+                     <children>
+                        <Label fx:id="order_status" alignment="CENTER" prefHeight="74.0" prefWidth="549.0" text="Label" textFill="#161867">
+                           <font>
+                              <Font name="Lucida Bright Demibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#pressed_back" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #242551; -fx-background-radius: 25; -fx-cursor: hand;" text="Back" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="90.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
